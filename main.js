@@ -271,7 +271,7 @@ const COUNTRIES_DATA = [
     flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
     currency: 'RWF',
     fee: '6,500 RWF',
-    welcomeBonus: '2,000 RWF',
+    welcomeBonus: '3,900 RWF',
     level1: '3,500 RWF',
     level2: '1,200 RWF',
     level3: '500 RWF',
