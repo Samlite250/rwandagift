@@ -912,17 +912,7 @@ window.closeFeesModal = function(event) {
     document.body.style.overflow = '';
   }
 };
- (replaces homepage section)
 
-
-window.closeFeesModal = function(event) {
-  // If called from overlay click, only close if clicking the backdrop itself
-  if (event && event.target !== document.getElementById('feesModal')) return;
-  const modal = document.getElementById('feesModal');
-  if (!modal) return;
-  modal.classList.remove('active');
-  document.body.style.overflow = '';
-};
 
 // Close modals on Escape key
 document.addEventListener('keydown', (e) => {
