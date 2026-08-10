@@ -268,7 +268,7 @@ const COUNTRIES_DATA = [
   {
     id: 'rwanda',
     country: 'Rwanda',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇷🇼',
     currency: 'RWF',
     fee: '6,500 RWF',
     welcomeBonus: '3,900 RWF',
@@ -281,7 +281,7 @@ const COUNTRIES_DATA = [
   {
     id: 'kenya',
     country: 'Kenya',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇰🇪',
     currency: 'KSH',
     fee: 'KSH 500',
     welcomeBonus: '150 KSH',
@@ -294,7 +294,7 @@ const COUNTRIES_DATA = [
   {
     id: 'tanzania',
     country: 'Tanzania',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇹🇿',
     currency: 'TZS',
     fee: '11,500 TZS',
     welcomeBonus: '3,000 TZS',
@@ -307,7 +307,7 @@ const COUNTRIES_DATA = [
   {
     id: 'uganda',
     country: 'Uganda',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇺🇬',
     currency: 'UGX',
     fee: '19,000 UGX',
     welcomeBonus: '4,500 UGX',
@@ -320,7 +320,7 @@ const COUNTRIES_DATA = [
   {
     id: 'nigeria',
     country: 'Nigeria',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇳🇬',
     currency: 'NGN',
     fee: '8,500 NGN',
     welcomeBonus: '2,000 NGN',
@@ -333,7 +333,7 @@ const COUNTRIES_DATA = [
   {
     id: 'burundi',
     country: 'Burundi',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇧🇮',
     currency: 'BIF',
     fee: '25,000 BIF',
     welcomeBonus: '6,000 BIF',
@@ -346,7 +346,7 @@ const COUNTRIES_DATA = [
   {
     id: 'zambia',
     country: 'Zambia',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇿🇲',
     currency: 'ZK',
     fee: 'ZK 130',
     welcomeBonus: '30 ZK',
@@ -359,7 +359,7 @@ const COUNTRIES_DATA = [
   {
     id: 'malawi',
     country: 'Malawi',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇲🇼',
     currency: 'MK',
     fee: 'MK 26,000',
     welcomeBonus: '6,000 MK',
@@ -372,7 +372,7 @@ const COUNTRIES_DATA = [
   {
     id: 'ivorycoast',
     country: 'Ivory Coast',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇨🇮',
     currency: 'XOF',
     fee: '4,000 XOF',
     welcomeBonus: '1,000 XOF',
@@ -385,7 +385,7 @@ const COUNTRIES_DATA = [
   {
     id: 'senegal',
     country: 'Senegal',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇸🇳',
     currency: 'XOF',
     fee: '4,000 XOF',
     welcomeBonus: '1,000 XOF',
@@ -398,7 +398,7 @@ const COUNTRIES_DATA = [
   {
     id: 'botswana',
     country: 'Botswana',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇧🇼',
     currency: 'BWP',
     fee: '190 BWP',
     welcomeBonus: '45 BWP',
@@ -411,7 +411,7 @@ const COUNTRIES_DATA = [
   {
     id: 'southafrica',
     country: 'South Africa',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇿🇦',
     currency: 'ZAR',
     fee: '70 ZAR',
     welcomeBonus: '18 ZAR',
@@ -424,7 +424,7 @@ const COUNTRIES_DATA = [
   {
     id: 'ghana',
     country: 'Ghana',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇬🇭',
     currency: 'GHC',
     fee: 'GHC 90',
     welcomeBonus: '20 GHC',
@@ -437,7 +437,7 @@ const COUNTRIES_DATA = [
   {
     id: 'cameroon',
     country: 'Cameroon',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇨🇲',
     currency: 'XAF',
     fee: '4,000 XAF',
     welcomeBonus: '1,000 XAF',
@@ -450,7 +450,7 @@ const COUNTRIES_DATA = [
   {
     id: 'westafrica',
     country: 'West Africa',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🌍',
     currency: 'XOF',
     fee: '4,000 XOF',
     welcomeBonus: '1,000 XOF',
@@ -463,7 +463,7 @@ const COUNTRIES_DATA = [
   {
     id: 'southsudan',
     country: 'South Sudan',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🇸🇸',
     currency: 'SSP',
     fee: '20,000 SSP',
     welcomeBonus: '5,000 SSP',
@@ -476,7 +476,7 @@ const COUNTRIES_DATA = [
   {
     id: 'others',
     country: 'International / Others',
-    flag: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    flag: '🌐',
     currency: 'USD',
     fee: '$8.00 USD',
     welcomeBonus: '$2.00 USD',
