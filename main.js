@@ -553,6 +553,7 @@ document.addEventListener('DOMContentLoaded', () => {
   applyLanguage(currentLang);
   initTicker();
   initCountryMatrix();
+  renderActivationTable();
   initPostsHub();
   initCalculator();
   initGallery();
@@ -628,6 +629,48 @@ function initTicker() {
   `).join('');
 
   tickerEl.innerHTML = tickerHTML + tickerHTML;
+}
+
+
+// ACTIVATION TABLE — renders directly from COUNTRIES_DATA
+function renderActivationTable() {
+  const body = document.getElementById('activationTableBody');
+  if (!body) return;
+
+  const rows = COUNTRIES_DATA.map((c, i) => `
+    <tr style="border-bottom:1px solid var(--bg-glass-border); transition:var(--transition);"
+      onmouseover="this.style.background='var(--bg-card-hover)'"
+      onmouseout="this.style.background='transparent'">
+      <td style="padding:0.9rem 1.2rem; color:var(--text-dim); font-size:0.8rem;">${String(i+1).padStart(2,'0')}</td>
+      <td style="padding:0.9rem 1.2rem;">
+        <div style="display:flex; align-items:center; gap:0.6rem; font-weight:700; color:var(--text-main);">
+          ${c.flag}
+          ${c.country}
+          ${c.featured ? '<span class="badge badge-gold" style="font-size:0.65rem; padding:0.15rem 0.5rem;">Hot</span>' : ''}
+        </div>
+      </td>
+      <td style="padding:0.9rem 1.2rem; color:var(--text-muted); font-size:0.85rem;">${c.currency}</td>
+      <td style="padding:0.9rem 1.2rem; text-align:center;">
+        <span style="font-weight:800; font-size:1.05rem; color:var(--accent-gold);">${c.fee}</span>
+      </td>
+      <td style="padding:0.9rem 1.2rem; text-align:center;">
+        <span style="font-weight:700; color:var(--primary);">+ ${c.welcomeBonus}</span>
+      </td>
+      <td style="padding:0.9rem 1.2rem; color:var(--text-muted); font-size:0.82rem;">${c.depositMethod}</td>
+      <td style="padding:0.9rem 1.2rem; text-align:center;">
+        <a href="${REGISTRATION_URL}" target="_blank"
+          style="display:inline-block; padding:0.45rem 1rem; border-radius:var(--radius-full);
+                 background:var(--primary-light); color:var(--primary); font-size:0.8rem;
+                 font-weight:700; border:1px solid var(--primary); text-decoration:none;
+                 transition:var(--transition); white-space:nowrap;"
+          onmouseover="this.style.background='var(--primary)'; this.style.color='#000'"
+          onmouseout="this.style.background='var(--primary-light)'; this.style.color='var(--primary)'">
+          Activate →
+        </a>
+      </td>
+    </tr>
+  `).join('');
+  body.innerHTML = rows;
 }
 
 // COUNTRY MATRIX RENDER & FILTER TABS FOR ALL 18 COUNTRIES
