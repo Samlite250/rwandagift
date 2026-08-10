@@ -71,6 +71,10 @@ const TRANSLATIONS = {
     method5Desc: "Access premium financial literacy books and Forex trading tutorials with completion bonus rewards.",
     method6Title: "Daily Lucky Spin Wheel",
     method6Desc: "Spin the wheel every 24 hours to win free cash prizes, extra task multipliers, and welcome gifts.",
+    method7Title: "Instagram Ads",
+    method7Desc: "Earn steady cash directly to your phone by liking, viewing, and interacting with promoted Instagram advertisements.",
+    method8Title: "Trivial Questions",
+    method8Desc: "Answer simple, everyday trivia questions on culture, math, and logic to earn cash rewards for daily correct streaks.",
     postsTitle: "Activation Articles & Country Guides",
     postsSubtitle: "Detailed registration guides, fee breakdowns, and withdrawal instructions for all supported countries.",
     galleryHeaderTag: "Proof & Mobile Money Receipts",
@@ -151,6 +155,10 @@ const TRANSLATIONS = {
     method5Desc: "Soma ibitabo by' ubukungu n' amasomo y' ikoranabuhanga uhembwe bonus y' uko urangije.",
     method6Title: "Ururo Rwa Buri Munsi (Spin Wheel)",
     method6Desc: "Zungurutsa ururo buri masaha 24 utangire ibihembo by' amafaranga y' ubuntu.",
+    method7Title: "Instagram Ads",
+    method7Desc: "Injiza amafaranga asanzwe kuri telefone yawe ukanze like, ureba amatangazo yatoranyijwe ya Instagram.",
+    method8Title: "Ibibazo Byubwenge (Trivia)",
+    method8Desc: "Subiza ibibazo byoroshye buri munsi byibaza ku buzima bwacu ndetse n'ibindi ushobora guhemberwa amanota.",
     postsTitle: "Amakuru n' Amabwiriza Y' Activation Mu Bihugu",
     postsSubtitle: "Reba uko bakora registration, ikiguzi cy' igihugu cyawe, n' uko ubikuza kuri MoMo.",
     galleryHeaderTag: "Ibyemerewe (MoMo Receipts)",
@@ -231,6 +239,10 @@ const TRANSLATIONS = {
     method5Desc: "Accédez à des livres financiers et des tutoriels Forex avec bonus de complétion.",
     method6Title: "Roue de la Fortune Quotidienne",
     method6Desc: "Tournez la roue toutes les 24 heures pour gagner des prix en cash et des bonus.",
+    method7Title: "Publicités Instagram",
+    method7Desc: "Gagnez de l'argent régulièrement sur votre téléphone en aimant, visionnant et interagissant avec des annonces Instagram.",
+    method8Title: "Questions de Culture Générale",
+    method8Desc: "Répondez à des questions de trivia simples et gagnez de l'argent pour des séries continues de bonnes réponses.",
     postsTitle: "Articles d'Activation Et Guides par Pays",
     postsSubtitle: "Guides d'inscription détaillés, frais d'activation et instructions de retrait pour chaque pays.",
     galleryHeaderTag: "Preuves de Paiement MoMo",
@@ -906,15 +918,7 @@ window.handleWhatsAppSubmit = function(e) {
 };
 
 // ACTIVATION FEES MODAL (replaces homepage section)
-window.openFeesModal = function() {
-  const modal = document.getElementById('feesModal');
-  if (!modal) return;
-  modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
-  // Render tabs + cards inside the modal
-  renderTabs();
-  renderMatrixCards();
-};
+
 
 window.closeFeesModal = function(event) {
   // If called from overlay click, only close if clicking the backdrop itself
@@ -929,10 +933,7 @@ window.closeFeesModal = function(event) {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     window.closeWhatsAppModal();
-    const feesModal = document.getElementById('feesModal');
-    if (feesModal) {
-      feesModal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+    
+    
   }
 });
