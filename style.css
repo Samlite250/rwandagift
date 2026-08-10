@@ -6,41 +6,41 @@
 
 :root {
   /* Vibrant & Rich Color System */
-  --primary: #00e676;
-  --primary-gradient: linear-gradient(135deg, #00e676 0%, #00b0ff 100%);
-  --primary-hover: #00c853;
-  --primary-light: rgba(0, 230, 118, 0.12);
-  --primary-glow: rgba(0, 230, 118, 0.4);
+  --primary: #00f260;
+  --primary-gradient: linear-gradient(135deg, #00f260 0%, #0575e6 100%);
+  --primary-hover: #00d956;
+  --primary-light: rgba(0, 242, 96, 0.12);
+  --primary-glow: rgba(0, 242, 96, 0.4);
 
   /* Gold & Warm Accent Palette */
-  --accent-gold: #ffc107;
-  --accent-gold-gradient: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
-  --accent-gold-hover: #ffa000;
-  --accent-gold-light: rgba(255, 193, 7, 0.12);
+  --accent-gold: #fbbf24;
+  --accent-gold-gradient: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+  --accent-gold-hover: #f59e0b;
+  --accent-gold-light: rgba(251, 191, 36, 0.12);
   --accent-cyan: #00e5ff;
   --accent-purple: #ab47bc;
 
-  /* Surfaces & Glassmorphism */
-  --bg-dark: #090d16;
-  --bg-card: #111827;
-  --bg-card-hover: #1f293d;
-  --bg-glass: rgba(17, 24, 39, 0.88);
-  --bg-glass-border: rgba(255, 255, 255, 0.12);
+  /* Surfaces & Glassmorphism - Premium OLED Look */
+  --bg-dark: #050914;
+  --bg-card: #0c1222;
+  --bg-card-hover: #131b31;
+  --bg-glass: rgba(12, 18, 34, 0.7);
+  --bg-glass-border: rgba(255, 255, 255, 0.05);
 
   /* Typography Colors */
   --text-main: #ffffff;
   --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  --text-dim: #475569;
 
   /* Layout & System Values */
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
   --radius-full: 9999px;
-  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.35);
-  --shadow-glow: 0 0 30px rgba(0, 230, 118, 0.25);
-  --shadow-gold: 0 0 30px rgba(255, 193, 7, 0.25);
-  --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 40px rgba(0, 242, 96, 0.15);
+  --shadow-gold: 0 0 40px rgba(251, 191, 36, 0.15);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* LIGHT THEME SURFACES */
@@ -78,6 +78,9 @@ body {
   width: 100%;
   overflow-x: hidden;
   line-height: 1.6;
+  background: radial-gradient(circle at 15% 50%, rgba(0,242,96,0.06), transparent 25%),
+              radial-gradient(circle at 85% 30%, rgba(5,117,230,0.06), transparent 25%),
+              var(--bg-dark);
   background-color: var(--bg-dark);
 }
 

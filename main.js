@@ -897,25 +897,11 @@ window.handleAuthSubmit = function(e) {
 };
 
 // WHATSAPP MODAL LOGIC WITH SUPPORT NUMBER 250735323980
-window.openWhatsAppModal = function() {
-  document.getElementById('whatsappModal').classList.add('active');
-  document.body.style.overflow = 'hidden';
-};
 
-window.closeWhatsAppModal = function() {
-  document.getElementById('whatsappModal').classList.remove('active');
-  document.body.style.overflow = '';
-};
 
-window.handleWhatsAppSubmit = function(e) {
-  e.preventDefault();
-  const name = document.getElementById('waName').value;
-  const country = document.getElementById('waCountry').value;
-  const phone = WHATSAPP_SUPPORT_NUMBER;
-  const message = encodeURIComponent(`Hello Rwandagift 👋, my name is ${name} from ${country}. I would like to activate my account and start earning today! Please guide me.`);
-  window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
-  window.closeWhatsAppModal();
-};
+
+
+
 
 // ACTIVATION FEES MODAL (replaces homepage section)
 
@@ -932,7 +918,7 @@ window.closeFeesModal = function(event) {
 // Close modals on Escape key
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
-    window.closeWhatsAppModal();
+    
     
     
   }
