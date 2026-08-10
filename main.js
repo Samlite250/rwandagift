@@ -707,18 +707,7 @@ function renderMatrixCards() {
             <span>${t.welcomeBonusLabel}</span>
             <span class="val">${c.welcomeBonus}</span>
           </div>
-          <div class="reward-row">
-            <span>${t.level1Label}</span>
-            <span class="val">${c.level1}</span>
-          </div>
-          <div class="reward-row">
-            <span>${t.level2Label}</span>
-            <span class="val">${c.level2}</span>
-          </div>
-          <div class="reward-row">
-            <span>${t.level3Label}</span>
-            <span class="val">${c.level3}</span>
-          </div>
+          
         </div>
 
         <div style="font-size:0.825rem; color:var(--text-muted); margin-bottom:1.4rem;">
@@ -903,7 +892,27 @@ window.handleAuthSubmit = function(e) {
 
 
 
-// ACTIVATION FEES MODAL (replaces homepage section)
+// ACTIVATION FEES MODAL
+
+window.openFeesModal = function() {
+  const modal = document.getElementById('feesModal');
+  if (!modal) return;
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  renderTabs();
+  renderMatrixCards();
+};
+
+window.closeFeesModal = function(event) {
+  if (event && event.target.id === 'feesModal') {
+    document.getElementById('feesModal').classList.remove('active');
+    document.body.style.overflow = '';
+  } else if (!event) {
+    document.getElementById('feesModal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+};
+ (replaces homepage section)
 
 
 window.closeFeesModal = function(event) {
@@ -918,8 +927,7 @@ window.closeFeesModal = function(event) {
 // Close modals on Escape key
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
-    
-    
-    
+    const feesModal = document.getElementById('feesModal');
+    if (feesModal) { feesModal.classList.remove('active'); document.body.style.overflow = ''; }
   }
 });
