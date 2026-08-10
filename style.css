@@ -1,46 +1,53 @@
 /* ==========================================================================
-   RWANDAGIFT - ENHANCED VIBRANT COLOR PALETTE & PERFECT MOBILE RESPONSIVENESS
+   RWANDAGIFT — SKY BLUE · BOLD GREEN · GOOGLE BLUE DESIGN SYSTEM
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Vibrant & Rich Color System */
-  --primary: #00f260;
-  --primary-gradient: linear-gradient(135deg, #00f260 0%, #0575e6 100%);
-  --primary-hover: #00d956;
-  --primary-light: rgba(0, 242, 96, 0.12);
-  --primary-glow: rgba(0, 242, 96, 0.4);
+  /* ── PRIMARY: Bold Green ── */
+  --primary: #16C653;
+  --primary-gradient: linear-gradient(135deg, #16C653 0%, #0ea844 100%);
+  --primary-hover: #13b349;
+  --primary-light: rgba(22, 198, 83, 0.12);
+  --primary-glow: rgba(22, 198, 83, 0.35);
 
-  /* Gold & Warm Accent Palette */
-  --accent-gold: #fbbf24;
-  --accent-gold-gradient: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
-  --accent-gold-hover: #f59e0b;
-  --accent-gold-light: rgba(251, 191, 36, 0.12);
-  --accent-cyan: #00e5ff;
-  --accent-purple: #ab47bc;
+  /* ── SECONDARY: Google Blue ── */
+  --google-blue: #4285F4;
+  --google-blue-gradient: linear-gradient(135deg, #4285F4 0%, #1a6ef7 100%);
+  --google-blue-hover: #3572d4;
+  --google-blue-light: rgba(66, 133, 244, 0.12);
+  --google-blue-glow: rgba(66, 133, 244, 0.35);
 
-  /* Surfaces & Glassmorphism - Premium OLED Look */
-  --bg-dark: #050914;
-  --bg-card: #0c1222;
-  --bg-card-hover: #131b31;
-  --bg-glass: rgba(12, 18, 34, 0.7);
-  --bg-glass-border: rgba(255, 255, 255, 0.05);
+  /* ── ACCENT: Sky Blue ── */
+  --accent-gold: #38BDF8;
+  --accent-gold-gradient: linear-gradient(135deg, #0ea5e9 0%, #38BDF8 100%);
+  --accent-gold-hover: #0ea5e9;
+  --accent-gold-light: rgba(56, 189, 248, 0.12);
+  --accent-cyan: #38BDF8;
+  --accent-purple: #a855f7;
 
-  /* Typography Colors */
-  --text-main: #ffffff;
+  /* ── Surfaces & Glassmorphism ── */
+  --bg-dark: #04080f;
+  --bg-card: #0a1120;
+  --bg-card-hover: #0f1a30;
+  --bg-glass: rgba(10, 17, 32, 0.75);
+  --bg-glass-border: rgba(66, 133, 244, 0.1);
+
+  /* ── Typography ── */
+  --text-main: #f0f6ff;
   --text-muted: #94a3b8;
   --text-dim: #475569;
 
-  /* Layout & System Values */
+  /* ── Layout & System ── */
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 20px;
   --radius-full: 9999px;
-  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 40px rgba(0, 242, 96, 0.15);
-  --shadow-gold: 0 0 40px rgba(251, 191, 36, 0.15);
-  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --shadow-sm: 0 4px 24px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 40px rgba(22, 198, 83, 0.2);
+  --shadow-gold: 0 0 40px rgba(56, 189, 248, 0.2);
+  --transition: all 0.28s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* LIGHT THEME SURFACES */
@@ -78,9 +85,11 @@ body {
   width: 100%;
   overflow-x: hidden;
   line-height: 1.6;
-  background: radial-gradient(circle at 15% 50%, rgba(0,242,96,0.06), transparent 25%),
-              radial-gradient(circle at 85% 30%, rgba(5,117,230,0.06), transparent 25%),
-              var(--bg-dark);
+  background: 
+    radial-gradient(ellipse at 10% 40%, rgba(22,198,83,0.07) 0%, transparent 35%),
+    radial-gradient(ellipse at 90% 20%, rgba(66,133,244,0.07) 0%, transparent 35%),
+    radial-gradient(ellipse at 50% 90%, rgba(56,189,248,0.05) 0%, transparent 35%),
+    var(--bg-dark);
   background-color: var(--bg-dark);
 }
 
@@ -117,19 +126,19 @@ button {
 
 /* VIBRANT GRADIENT TEXTS */
 .gradient-text {
-  background: linear-gradient(135deg, #00e676 0%, #00b0ff 50%, #ffc107 100%);
+  background: linear-gradient(135deg, #16C653 0%, #38BDF8 50%, #4285F4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-gold {
-  background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #4285F4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-cyan {
-  background: linear-gradient(135deg, #00e5ff 0%, #00e676 100%);
+  background: linear-gradient(135deg, #38BDF8 0%, #16C653 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -154,37 +163,37 @@ button {
 
 .btn-primary {
   background: var(--primary-gradient);
-  color: #040914;
-  box-shadow: 0 6px 25px rgba(0, 230, 118, 0.4);
+  color: #fff;
+  box-shadow: 0 6px 25px rgba(22, 198, 83, 0.4);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 10px 35px rgba(0, 230, 118, 0.6);
+  box-shadow: 0 10px 35px rgba(22, 198, 83, 0.6);
 }
 
 .btn-gold {
-  background: var(--accent-gold-gradient);
-  color: #040914;
-  box-shadow: 0 6px 25px rgba(255, 193, 7, 0.4);
+  background: var(--google-blue-gradient);
+  color: #fff;
+  box-shadow: 0 6px 25px rgba(66, 133, 244, 0.4);
 }
 
 .btn-gold:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 10px 35px rgba(255, 193, 7, 0.6);
+  box-shadow: 0 10px 35px rgba(66, 133, 244, 0.6);
 }
 
 .btn-outline {
-  border: 1px solid var(--bg-glass-border);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   background: var(--bg-glass);
   color: var(--text-main);
   backdrop-filter: blur(12px);
 }
 
 .btn-outline:hover {
-  border-color: var(--primary);
-  background: var(--primary-light);
-  color: var(--primary);
+  border-color: var(--accent-gold);
+  background: var(--accent-gold-light);
+  color: var(--accent-gold);
 }
 
 /* BADGES & PULSE */
