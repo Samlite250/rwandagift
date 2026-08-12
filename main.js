@@ -104,7 +104,7 @@ const TRANSLATIONS = {
     createAccount: "Fungura Konti Ku Buntu",
     joinWaGroup: "Injira mu Group ya WhatsApp",
     activeEarnersTag: "Abanyamuryango 14,280+ Bikorera Amafaranga Uyu Munsi",
-    heroTitle: `Hindura Umwanya Ukoresha Kuri Telefone Ba <span class="gradient-text">Amafaranga Y'Ukuri</span>`,
+    heroTitle: `Hindura Umwanya Ukoresha Kuri Telefone mo <span class="gradient-text">Amafaranga Y'Ukuri</span>`,
     heroDesc: "Rwandagift ni urubuga rukuru muri Afurika ruha abantu amahirwe yo kwinjiza amafaranga kuri internet. Reba amashusho ya TikTok n'a YouTube, subiza ibibazo (Surveys), kina Chess n'Igisoro, kandi ubone inyungu kuri buri muntu utumiye bishyuwe ako kanya kuri MTN Mobile Money (*182#) cyangwa Airtel Money!",
     getStartedBtn: "Tangira Kwinjiza Uyu Munsi",
     viewFeesBtn: "Reba Ikiguzi cyo Gufungura Konti",
