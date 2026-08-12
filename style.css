@@ -137,18 +137,21 @@ button {
 .gradient-text {
   background: linear-gradient(135deg, #16C653 0%, #38BDF8 50%, #4285F4 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-gold {
   background: linear-gradient(135deg, #38BDF8 0%, #4285F4 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-cyan {
   background: linear-gradient(135deg, #38BDF8 0%, #16C653 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1336,13 +1339,31 @@ button {
   gap: 1rem;
 }
 
-/* RESPONSIVE MEDIA QUERIES */
+/* ============================================================
+   RESPONSIVE MEDIA QUERIES — Full-site mobile/tablet/desktop
+   ============================================================ */
+
+/* ── Tablet & Below ── */
 @media (max-width: 1024px) {
   .steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .hero-grid {
+    gap: 2rem;
+  }
+
+  .methods-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 }
 
+/* ── Medium Tablet ── */
 @media (max-width: 992px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1387,8 +1408,21 @@ button {
   .desktop-cta {
     display: none !important;
   }
+
+  /* Hero card full width on tablet */
+  .hero-card {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Section headers */
+  .section-header {
+    margin-bottom: 2rem;
+  }
 }
 
+/* ── Small Tablet / Large Phone ── */
 @media (max-width: 768px) {
 
   .fees-modal-grid,
@@ -1400,27 +1434,116 @@ button {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.8rem;
   }
-}
 
-@media (max-width: 640px) {
-  .btn {
-    width: 100%;
-    padding: 0.85rem 1rem;
-    font-size: 0.95rem;
-    line-height: 1.35;
+  .methods-grid {
+    grid-template-columns: 1fr;
   }
 
+  /* Calculator responsive */
+  .calc-box {
+    padding: 1.4rem;
+  }
+
+  .total-earnings-display {
+    font-size: clamp(1.8rem, 6vw, 2.8rem);
+  }
+
+  /* Fees table scrollable */
+  #activation-fees .container {
+    padding: 0 0.75rem;
+  }
+
+  /* Gallery 2 cols on tablet */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Steps 2 cols */
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Fees modal */
+  .fees-modal-card {
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  /* Matrix cards */
+  .country-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer 2 col on mid-tablet */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Modal */
+  .modal-card {
+    padding: 1.5rem 1.2rem;
+    border-radius: var(--radius-md);
+  }
+
+  /* Navbar tweaks */
+  .navbar {
+    padding: 0.65rem 0;
+  }
+
+  .brand-logo {
+    font-size: 1.3rem;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+
+  /* Base */
   .container {
     padding: 0 1rem;
   }
 
+  /* Buttons — full width on mobile */
+  .btn {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.35;
+    justify-content: center;
+  }
+
+  /* Don't force full-width on badge/small scenarios */
+  .badge .btn,
+  .method-card .btn,
+  .nav-actions .btn {
+    width: auto;
+  }
+
+  /* Hero */
   .hero {
-    padding: 2.5rem 0 2rem 0;
+    padding: 2rem 0 1.8rem 0;
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+    letter-spacing: -0.5px;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-tag {
+    margin-bottom: 1rem;
   }
 
   .hero-actions {
     flex-direction: column;
     width: 100%;
+    gap: 0.7rem;
   }
 
   .hero-actions .btn {
@@ -1428,20 +1551,208 @@ button {
   }
 
   .hero-stats {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    padding-top: 1.2rem;
+  }
+
+  .stat-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .stat-item p {
+    font-size: 0.7rem;
+  }
+
+  /* Hero preview card */
+  .hero-card {
+    padding: 1.3rem;
+    border-radius: var(--radius-md);
+  }
+
+  .hero-card-cta {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .hero-card-badges {
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .preview-row {
+    padding: 0.7rem 0.8rem;
+  }
+
+  .preview-info h4 {
+    font-size: 0.82rem;
+  }
+
+  .preview-info p {
+    font-size: 0.72rem;
+  }
+
+  /* Badges */
+  .badge {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.85rem;
+  }
+
+  /* Section headers */
+  .section-header {
+    margin-bottom: 1.8rem;
+    padding: 0 0.5rem;
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .section-header p {
+    font-size: 0.9rem;
+  }
+
+  /* Methods */
+  .methods-section {
+    padding: 3rem 0;
   }
 
   .methods-grid {
     grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .method-card {
+    padding: 1.4rem;
+  }
+
+  .method-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .method-card p {
+    font-size: 0.85rem;
+  }
+
+  .method-icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 0.8rem;
+  }
+
+  /* Country tabs */
+  .country-filter-tabs {
+    gap: 0.4rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .country-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* Calculator */
+  .calc-section {
+    padding: 3rem 0;
+  }
+
+  .calc-box {
+    padding: 1.2rem 1rem;
+    gap: 1.2rem;
+    border-radius: var(--radius-md);
+  }
+
+  .calc-results {
+    padding: 1.5rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .calc-results h3 {
+    font-size: 0.9rem;
+  }
+
+  .total-earnings-display {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+
+  .breakdown-row {
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+  }
+
+  .breakdown-item {
+    text-align: center;
+  }
+
+  /* Gallery */
+  .gallery-section {
+    padding: 3rem 0;
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .gallery-item {
+    height: 180px;
+  }
+
+  /* Steps */
+  .steps-section {
+    padding: 3rem 0;
   }
 
   .steps-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .step-card {
+    padding: 1.4rem 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .step-number {
+    margin: 0;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .step-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .step-card p {
+    font-size: 0.82rem;
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 3rem 0;
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.875rem;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 3rem 0 1.5rem 0;
   }
 
   .footer-grid {
@@ -1449,41 +1760,124 @@ button {
     gap: 1.5rem;
   }
 
-  .calc-box {
-    padding: 1.2rem;
+  .footer-brand p {
+    font-size: 0.85rem;
   }
 
-  .calc-results {
-    padding: 1.5rem 1rem;
+  .footer-col h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
   }
 
-  .fees-modal-card {
-    padding: 1.2rem;
+  .footer-links {
+    gap: 0.5rem;
   }
 
+  .footer-links a,
+  .footer-links li {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.78rem;
+    padding-top: 1.2rem;
+  }
+
+  /* WhatsApp */
   .floating-whatsapp {
     bottom: 1rem;
     right: 1rem;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
   }
 
+  .floating-whatsapp svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Modals */
   .modal-card {
-    padding: 1.5rem 1rem;
+    padding: 1.2rem 1rem;
+    border-radius: var(--radius-md);
+    max-height: 95vh;
   }
 
-  .breakdown-row {
-    flex-direction: column;
-    gap: 0.6rem;
+  .fees-modal-card {
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    max-height: 95vh;
+  }
+
+  /* Activation table */
+  #activation-fees table th,
+  #activation-fees table td {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  #activation-fees h2 {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+  }
+
+  /* Matrix cards */
+  .matrix-card {
+    padding: 1.2rem;
+  }
+
+  /* Country matrix */
+  .country-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Drawer */
+  .drawer-links a {
+    font-size: 1.05rem;
   }
 }
 
+/* ── Very Small Phones (< 380px) ── */
+@media (max-width: 380px) {
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-/* ACTIVATION TABLE RESPONSIVE */
-@media (max-width: 640px) {
+  .stat-item h3 {
+    font-size: 1rem;
+  }
 
-  #activation-fees table th,
-  #activation-fees table td {
-    padding: 0.7rem 0.8rem;
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-actions .btn {
+    font-size: 0.88rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .methods-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .badge {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .btn-sm {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .country-tab {
+    font-size: 0.75rem;
+    padding: 0.45rem 0.85rem;
   }
 }
