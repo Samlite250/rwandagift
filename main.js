@@ -69,8 +69,6 @@ const TRANSLATIONS = {
     method4Desc: "Compete in friendly board game tournaments and win real cash prize pools every week.",
     method5Title: "E-Books & Forex Academy",
     method5Desc: "Access premium financial literacy books and Forex trading tutorials with completion bonus rewards.",
-    method6Title: "Daily Lucky Spin Wheel",
-    method6Desc: "Spin the wheel every 24 hours to win free cash prizes, extra task multipliers, and welcome gifts.",
     method7Title: "Instagram Ads",
     method7Desc: "Earn steady cash directly to your phone by liking, viewing, and interacting with promoted Instagram advertisements.",
     method8Title: "Trivial Questions",
@@ -87,7 +85,7 @@ const TRANSLATIONS = {
     step2Title: "Activate Account",
     step2Desc: "Pay the one-time local currency activation fee via MTN MoMo, Airtel, or M-Pesa.",
     step3Title: "Perform Activities",
-    step3Desc: "Watch videos, complete surveys, play chess, spin the wheel, and invite friends.",
+    step3Desc: "Watch videos, complete surveys, play chess, and invite friends.",
     step4Title: "Instant Withdrawal",
     step4Desc: "Withdraw your earnings directly to your mobile wallet anytime with zero hassle.",
     faqTitle: "Frequently Asked Questions",
@@ -96,86 +94,84 @@ const TRANSLATIONS = {
   rw: {
     brandName: "Rwanda",
     navHome: "Ahabanza",
-    navActivations: "Amafaranga y'Activation",
+    navActivations: "Gufungura Konti",
     navCalc: "Kubara Inyungu",
-    navMethods: "Uburyo Bwo Kwinjiza",
-    navPosts: "Amakuru n' Amabwiriza",
-    navGallery: "Ibyemerewe (Proofs)",
+    navMethods: "Uburyo bwo Kwinjiza",
+    navPosts: "Amabwiriza n'Ibihugu",
+    navGallery: "Ibyemezo by'Ubwishyure",
     navHow: "Uko Bikorwa",
     signIn: "Kwinjira",
-    createAccount: "Kurema Konti",
-    joinWaGroup: "Injira Mu Group Ya WhatsApp",
+    createAccount: "Fungura Konti Ku Buntu",
+    joinWaGroup: "Injira mu Group ya WhatsApp",
     activeEarnersTag: "Abanyamuryango 14,280+ Bikorera Amafaranga Uyu Munsi",
-    heroTitle: `Hindura Umwanya W' Ishusho Yawe Ko Kwemererwa <span class="gradient-text">Amafaranga Y'Ukuri</span>`,
-    heroDesc: "Rwandagift ni ikigo gikuru muri Afurika kibazanira amahirwe yo kwinjiza amafaranga kuri internet. Reba amashusho ya TikTok & YouTube, subiza ibibazo bya Surveys, kina Chess & Draughts, kandi winjize inyungu kuri buri mukiriya uzanye bishyuwe ako kanya kuri MTN Mobile Money (*182#) cyangwa Airtel Money!",
-    getStartedBtn: "Tangira Sawa Ako Kanya",
-    viewFeesBtn: "Reba Amafaranga Yo Kwactivate",
-    whatsappSupportBtn: "Kuvugana Na Support Kuri WhatsApp",
+    heroTitle: `Hindura Umwanya Ukoresha Kuri Telefone Ba <span class="gradient-text">Amafaranga Y'Ukuri</span>`,
+    heroDesc: "Rwandagift ni urubuga rukuru muri Afurika ruha abantu amahirwe yo kwinjiza amafaranga kuri internet. Reba amashusho ya TikTok n'a YouTube, subiza ibibazo (Surveys), kina Chess n'Igisoro, kandi ubone inyungu kuri buri muntu utumiye bishyuwe ako kanya kuri MTN Mobile Money (*182#) cyangwa Airtel Money!",
+    getStartedBtn: "Tangira Kwinjiza Uyu Munsi",
+    viewFeesBtn: "Reba Ikiguzi cyo Gufungura Konti",
+    whatsappSupportBtn: "Vugana na Support kuri WhatsApp",
     statPaid: "RWF 48.5M+",
-    statPaidDesc: "Ayishyuwe Yose Hamwe",
+    statPaidDesc: "Amafaranga Yose Yabikujwe",
     statCountries: "18+",
-    statCountriesDesc: "Ibihugu Bikorana Nacyo",
+    statCountriesDesc: "Ibihugu Bitangirwamo Serivisi",
     statPayouts: "Ako Kanya",
-    statPayoutsDesc: "Kwakira Kuri MoMo Ako Kanya",
-    activateToEarn: "Fungura Konti Wo Tangire Kwinjiza",
-    matrixHeaderTag: "Ibihugu Byose Bitanga Serivisi",
-    matrixTitle: "Ikiguzi Cy' Activation N' Inyungu Z' Abatumiwe",
-    matrixSubtitle: "Hitamo igihugu cyawe urebaho ikiguzi cyo gufungura konti, inyungu yo kwinjira, n'amafaranga ubona kuri buri muntu utumiye.",
-    oneTimeFee: "Ikiguzi Cy' Gufungura Konti (Rimwe Gusa)",
-    welcomeBonusLabel: "Inyungu Yo Gufungura Konti:",
-    level1Label: "Level 1 Abatumiwe Nawe:",
-    level2Label: "Level 2 Abatumiwe N' Abo Wagiye Utumira:",
-    level3Label: "Level 3 Inyungu Y' Ekipi:",
-    depositOptionsLabel: "Uburyo Bwo Kwishyura:",
-    calcHeaderTag: "Kubara Inyungu",
-    calcTitle: "Bara Amafaranga Ushobora Kwinjiza Ku Munsi N' Ukwezi",
-    calcSubtitle: "Koresha iyi mashini ibara mu buryo bw' ako kanya kumenya amafaranga uzakorerwa na Rwandagift.",
-    selectCurrency: "Hitamo Ingaruzwamufero:",
-    dailyTimeSpent: "Ibyuma Ukoresha Ku Munsi:",
+    statPayoutsDesc: "Ubwishyure bwa Mobile Money Bwako Kanya",
+    activateToEarn: "Fungura Konti Utangire Kwinjiza",
+    matrixHeaderTag: "Serivisi mu Bihugu Bitandukanye",
+    matrixTitle: "Ikiguzi cyo Gufungura Konti n'Inyungu z'Abatumiwe",
+    matrixSubtitle: "Hitamo igihugu cyawe urebe ikiguzi cyo gufungura konti, inyungu y'ikaze, n'amafaranga ubona kuri buri muntu utumiye.",
+    oneTimeFee: "Ikiguzi cyo Gufungura Konti (Kishyurwa Rimwe Gusa)",
+    welcomeBonusLabel: "Inyungu y'Ikaze (Welcome Bonus):",
+    level1Label: "Inyungu ya Level 1 (Abatumiwe nawe):",
+    level2Label: "Inyungu ya Level 2 (Abatumiwe n'abo utumiye):",
+    level3Label: "Inyungu ya Level 3 (Inyungu y'Ekipi):",
+    depositOptionsLabel: "Uburyo bwo Kwishyura:",
+    calcHeaderTag: "Ibarabara ry'Inyungu",
+    calcTitle: "Bara Amafaranga Ushobora Kwinjiza ku Munsi n'mu Kwezi",
+    calcSubtitle: "Koresha iyi mashini ibara urebereho amafaranga ushobora kwinjiza ku munsi n'mu kwezi kuri Rwandagift.",
+    selectCurrency: "Hitamo Ifaranga:",
+    dailyTimeSpent: "Amasaha Ukoresha ku Munsi:",
     videosWatched: "Amashusho ya TikTok & YouTube Ureba:",
-    referralsPerWeek: "Abantu Utumira Mu Cyumweru:",
-    estimatedMonthlyIncome: "Inyungu Ugabanyirizwa Mu Kwezi",
-    dailyAverage: "Ikigereranyo Ku Munsi",
-    weeklyPotential: "Amafaranga Mu Cyumweru",
-    startEarningToday: "Tangira Kwinjiza Ivi Uyu Munsi",
-    methodsHeaderTag: "Uburyo Bwinshi Bwo Kwinjiza",
-    methodsTitle: "Uburyo Ubonamo Amafaranga",
-    methodsSubtitle: "Uburyo 7 bwiziwe – ku telefone cyangwa mudasobwa yawe.",
-    method0Title: "Kuvugana N'Abanyamahanga",
-    method0Desc: "Ujyanwa n'abantu b'amahanga bashaka kwiga Icyongereza. Ugumya kuvugana uhembwe amafaranga buri saa rimwe ako kanya kuri MTN MoMo!",
-    method1Title: "Kureba TikTok & YouTube",
-    method1Desc: "Injiza amafaranga ureba amashusho guto, amavideo y' indirimbo, n' ibindi biyoboye.",
-    method2Title: "Kukanda Matsiko & Subiza Surveys",
-    method2Desc: "Kanda ku matangazo n' ibibazo bya buri munsi uhembwe amafaranga y' ukuri.",
-    method3Title: "Inyungu Z' Abatumiwe (3-Tier Matrix)",
-    method3Desc: "Ubona kugeza kuri 60%+ ku muntu utumiye imbona nkubone na komisiyo ku rwego rwa 2 n' rwa 3!",
-    method4Title: "Kukina Chess & Draughts",
-    method4Desc: "Rushanwa mu mikino y' ubwenge ya chess n' igisoro uhembwe ibihembo bikuru mu cyumweru.",
-    method5Title: "E-Books n' Masomo y' Forex",
-    method5Desc: "Soma ibitabo by' ubukungu n' amasomo y' ikoranabuhanga uhembwe bonus y' uko urangije.",
-    method6Title: "Ururo Rwa Buri Munsi (Spin Wheel)",
-    method6Desc: "Zungurutsa ururo buri masaha 24 utangire ibihembo by' amafaranga y' ubuntu.",
-    method7Title: "Instagram Ads",
-    method7Desc: "Injiza amafaranga asanzwe kuri telefone yawe ukanze like, ureba amatangazo yatoranyijwe ya Instagram.",
-    method8Title: "Ibibazo Byubwenge (Trivia)",
-    method8Desc: "Subiza ibibazo byoroshye buri munsi byibaza ku buzima bwacu ndetse n'ibindi ushobora guhemberwa amanota.",
-    postsTitle: "Amakuru n' Amabwiriza Y' Activation Mu Bihugu",
-    postsSubtitle: "Reba uko bakora registration, ikiguzi cy' igihugu cyawe, n' uko ubikuza kuri MoMo.",
-    galleryHeaderTag: "Ibyemerewe (MoMo Receipts)",
-    galleryTitle: "Ibyemezo By' Amafaranga Yabikujwe Kuri Rwandagift",
-    gallerySubtitle: "Reba inyemezabwishyu z' abanyamuryango babikuje kuri Mobile Money n' uburyo abantu bakoramo.",
-    stepsHeaderTag: "Intambwe 4 Zineshi",
-    stepsTitle: "Uko Utangira",
-    step1Title: "Iyandikishe Ku Buntu",
-    step1Desc: "Uzuza ifomu ngufi ukoresheje nimero ya telefone n' email yawe.",
-    step2Title: "Activate Konti Yawe",
-    step2Desc: "Ishyura ikiguzi cyo gufungura konti ukoresheje MTN MoMo (*182#) cyangwa Airtel Money.",
-    step3Title: "Kora Imirimo Ya Buri Munsi",
-    step3Desc: "Reba amashusho, subiza ibibazo, kina chess, zungurutsa ururo, kandi utumire inshuti.",
-    step4Title: "Bikuza Ako Kanya",
-    step4Desc: "Bikuza amafaranga yawe uyohereze kuri mobile wallet yawe igihe icyo aricyo cyose.",
-    faqTitle: "Ibibazo Bikunze Kubazwa",
-    footerDesc: "Gukomeza guteza imbere abakorera kuri internet mu Rwanda n' Afurika bakoresheje Mobile Money."
+    referralsPerWeek: "Abantu Utumira mu Cyumweru:",
+    estimatedMonthlyIncome: "Inyungu Iteganijwe mu Kwezi",
+    dailyAverage: "Ikigereranyo ku Munsi",
+    weeklyPotential: "Amafaranga mu Cyumweru",
+    startEarningToday: "Tangira Kwinjiza Uyu Munsi",
+    methodsHeaderTag: "Uburyo Gutandukanye bwo Kwinjiza",
+    methodsTitle: "Uko Ujya Ubona Amafaranga",
+    methodsSubtitle: "Uburyo 6 bwizewe – ukoresheje telefone cyangwa mudasobwa yawe.",
+    method0Title: "Kuvugana n'Abanyamahanga (Foreign Chat)",
+    method0Desc: "Uhuza n'abantu b'abanyamahanga bakeneye kwiga no kumenyereza ururimi. Uguma mu kiganiro uhembwe amafaranga buri isaha ako kanya kuri Mobile Money yawe!",
+    method1Title: "Kureba Amashusho ya TikTok & YouTube",
+    method1Desc: "Injiza amafaranga ureba amashusho magufi y'amamasosiyeti, indirimbo, n'ibindi bintu bizwi.",
+    method2Title: "Kukanda ku Matangazo & Gusubiza Surveys",
+    method2Desc: "Kanda ku matangazo y'ubucuruzi kandi usubize ibibazo bya buri munsi uhembwe amafaranga y'ukuri.",
+    method3Title: "Inyungu z'Abatumiwe (Level 1, 2 & 3)",
+    method3Desc: "Ubona kugeza kuri 60%+ ku muntu utumiye imbonankubone, hamwe n'inyungu zituruka ku rwego rwa 2 n'uwa 3!",
+    method4Title: "Gukina Chess n'Igisoro (Draughts)",
+    method4Desc: "Rushanwa mu mikino y'ubwenge ya chess n'igisoro maze uhembwe ibihembo by'amafaranga buri cyumweru.",
+    method5Title: "Gusoma E-Books n'Masomo ya Forex",
+    method5Desc: "Soma ibitabo by'ubukungu n'amasomo y'ubucuruzi bwa Forex uhembwe bonus iyo urangije masomo.",
+    method7Title: "Gukanda ku Matangazo ya Instagram",
+    method7Desc: "Injiza amafaranga kuri telefone yawe ukora like, ureba no gufatanya n'amatangazo ya Instagram.",
+    method8Title: "Ibibazo by'Ubwenge n'Ubumenyi (Trivia)",
+    method8Desc: "Subiza ibibazo byoroshye by'ubumenyi n'imibare maze uhembwe amafaranga kuri buri nshuro ushizemo neza.",
+    postsTitle: "Amabwiriza y'Activation n'Ibihugu",
+    postsSubtitle: "Soma amabwiriza arambuye y'iyandikisha, ibikuguzi by'ibihugu, n'uko ubikuza kuri Mobile Money.",
+    galleryHeaderTag: "Ibyemezo by'Ubwishyure (MoMo Receipts)",
+    galleryTitle: "Ibyemezo by'Amafaranga Yabikujwe kuri Rwandagift",
+    gallerySubtitle: "Reba inyemezabwishyu z'abanyamuryango babikuje kuri Mobile Money n'ibyishimo by'abakoresha urubuga.",
+    stepsHeaderTag: "Intambwe 4 Zoroshye",
+    stepsTitle: "Uko Utangira Kwinjiza",
+    step1Title: "Iyandikishe ku Buntu",
+    step1Desc: "Uzuza ifomu ngufi ukoresheje nimero ya telefone n' e-mail yawe mu minota 2.",
+    step2Title: "Gufungura Konti Yawe",
+    step2Desc: "Ishyura ikiguzi rimwe gusa ukoresheje MTN MoMo (*182#), Airtel Money cyangwa M-Pesa.",
+    step3Title: "Kora Imirimo ya Buri Munsi",
+    step3Desc: "Vugana n'abanyamahanga, reba amashusho, subiza ibibazo, kina igisoro, kandi utumire inshuti.",
+    step4Title: "Bikuza Amafaranga Ako Kanya",
+    step4Desc: "Bikuza amafaranga yawe uyohereze kuri telefone yawe (MoMo/Airtel) igihe icyo aricyo cyose masaha 24/7.",
+    faqTitle: "Ibibazo Bikunze Kubazwa (FAQ)",
+    footerDesc: "Guha amahirwe abanyafurika kwinjiza amafaranga kuri internet binyuze mu kureba amashusho, kuvugana n'abanyamahanga, n'ubwishyure bwa Mobile Money bwako kanya."
   },
   fr: {
     brandName: "Rwanda",
@@ -224,7 +220,7 @@ const TRANSLATIONS = {
     startEarningToday: "Commencez à Gagner Aujourd'hui",
     methodsHeaderTag: "Plusieurs Sources de Revenus",
     methodsTitle: "Comment Vous Gagnez de l'Argent",
-    methodsSubtitle: "7 méthodes éprouvées — disponibles sur tout smartphone ou ordinateur.",
+    methodsSubtitle: "6 méthodes éprouvées — disponibles sur tout smartphone ou ordinateur.",
     method0Title: "Tchatter avec des Étrangers",
     method0Desc: "Soyez jumelé avec des utilisateurs internationaux pour l'échange linguistique. Chattez en anglais et soyez payé chaque heure automatiquement sur MTN MoMo!",
     method1Title: "Regarder TikTok & YouTube",
@@ -237,8 +233,6 @@ const TRANSLATIONS = {
     method4Desc: "Participez à des tournois de jeux de société et gagnez des prix en cash chaque semaine.",
     method5Title: "E-Books & Académie Forex",
     method5Desc: "Accédez à des livres financiers et des tutoriels Forex avec bonus de complétion.",
-    method6Title: "Roue de la Fortune Quotidienne",
-    method6Desc: "Tournez la roue toutes les 24 heures pour gagner des prix en cash et des bonus.",
     method7Title: "Publicités Instagram",
     method7Desc: "Gagnez de l'argent régulièrement sur votre téléphone en aimant, visionnant et interagissant avec des annonces Instagram.",
     method8Title: "Questions de Culture Générale",
@@ -544,7 +538,7 @@ const GALLERY_ITEMS = [
 ];
 
 // CURRENT STATE
-let currentLang = localStorage.getItem('rwandagift_lang') || 'en';
+let currentLang = localStorage.getItem('rwandagift_lang') || 'rw';
 let currentFilter = 'all';
 
 // DOM INITIALIZATION
@@ -576,7 +570,7 @@ function initLanguageSwitcher() {
   }
 }
 
-window.setLanguage = function(lang) {
+window.setLanguage = function (lang) {
   if (!TRANSLATIONS[lang]) return;
   currentLang = lang;
   localStorage.setItem('rwandagift_lang', lang);
@@ -590,7 +584,7 @@ window.setLanguage = function(lang) {
 };
 
 function applyLanguage(lang) {
-  const t = TRANSLATIONS[lang] || TRANSLATIONS.en;
+  const t = TRANSLATIONS[lang] || TRANSLATIONS.rw;
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -598,7 +592,12 @@ function applyLanguage(lang) {
       if (key === 'heroTitle') {
         el.innerHTML = t[key];
       } else {
-        el.textContent = t[key];
+        const textSpan = el.querySelector('.i18n-text');
+        if (textSpan) {
+          textSpan.textContent = t[key];
+        } else {
+          el.textContent = t[key];
+        }
       }
     }
   });
@@ -607,7 +606,7 @@ function applyLanguage(lang) {
 }
 
 // MOBILE DRAWER TOGGLE
-window.toggleMobileDrawer = function() {
+window.toggleMobileDrawer = function () {
   const drawer = document.getElementById('mobileDrawer');
   if (drawer) {
     drawer.classList.toggle('active');
@@ -641,7 +640,7 @@ function renderActivationTable() {
     <tr style="border-bottom:1px solid var(--bg-glass-border); transition:var(--transition);"
       onmouseover="this.style.background='var(--bg-card-hover)'"
       onmouseout="this.style.background='transparent'">
-      <td style="padding:0.9rem 1.2rem; color:var(--text-dim); font-size:0.8rem;">${String(i+1).padStart(2,'0')}</td>
+      <td style="padding:0.9rem 1.2rem; color:var(--text-dim); font-size:0.8rem;">${String(i + 1).padStart(2, '0')}</td>
       <td style="padding:0.9rem 1.2rem;">
         <div style="display:flex; align-items:center; gap:0.6rem; font-weight:700; color:var(--text-main);">
           ${c.flag}
@@ -711,7 +710,7 @@ function renderTabs() {
   `).join('');
 }
 
-window.setCountryFilter = function(filterId) {
+window.setCountryFilter = function (filterId) {
   currentFilter = filterId;
   renderTabs();
   renderMatrixCards();
@@ -722,8 +721,8 @@ function renderMatrixCards() {
   if (!grid) return;
 
   const t = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
-  const filteredData = currentFilter === 'all' 
-    ? COUNTRIES_DATA 
+  const filteredData = currentFilter === 'all'
+    ? COUNTRIES_DATA
     : COUNTRIES_DATA.filter(c => c.id === currentFilter);
 
   grid.innerHTML = filteredData.map(c => `
@@ -800,7 +799,7 @@ function initCalculator() {
     const hours = parseInt(hoursRange.value);
     const videos = parseInt(videosRange.value);
     const refs = parseInt(referralsRange.value);
-    
+
     document.getElementById('hoursVal').textContent = `${hours} Hours`;
     document.getElementById('videosVal').textContent = `${videos} Videos`;
     document.getElementById('referralsVal').textContent = `${refs} People / week`;
@@ -910,20 +909,20 @@ function initFaqAccordion() {
 }
 
 // DIRECT REGISTRATION & MODALS LOGIC
-window.openRegisterModal = function(mode = 'register', preselectedCountry = 'Rwanda') {
+window.openRegisterModal = function (mode = 'register', preselectedCountry = 'Rwanda') {
   // Directly open official registration link
   window.open(REGISTRATION_URL, '_blank');
 };
 
-window.openWhatsAppGroup = function() {
+window.openWhatsAppGroup = function () {
   window.open(WHATSAPP_GROUP_URL, '_blank');
 };
 
-window.closeAuthModal = function() {
+window.closeAuthModal = function () {
   document.getElementById('authModal').classList.remove('active');
 };
 
-window.handleAuthSubmit = function(e) {
+window.handleAuthSubmit = function (e) {
   e.preventDefault();
   window.open(REGISTRATION_URL, '_blank');
 };
@@ -937,7 +936,7 @@ window.handleAuthSubmit = function(e) {
 
 // ACTIVATION FEES MODAL
 
-window.openFeesModal = function() {
+window.openFeesModal = function () {
   const modal = document.getElementById('feesModal');
   if (!modal) return;
   modal.classList.add('active');
@@ -946,7 +945,7 @@ window.openFeesModal = function() {
   renderMatrixCards();
 };
 
-window.closeFeesModal = function(event) {
+window.closeFeesModal = function (event) {
   if (event && event.target.id === 'feesModal') {
     document.getElementById('feesModal').classList.remove('active');
     document.body.style.overflow = '';
